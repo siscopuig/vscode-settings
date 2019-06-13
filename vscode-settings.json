@@ -19,14 +19,13 @@
         "panelTitle.activeBorder": "#616161",
         "breadcrumb.activeSelectionForeground": "#616161",
         "menu.selectionForeground": "#616161",
-        "menubar.selectionForeground": "#616161",
-        "statusBar.background": "#616161"
+        "menubar.selectionForeground": "#b1afaf",
+        "statusBar.background": "#292727",
+        "statusBar.foreground": "#b3b0b0"
     },
-    "materialTheme.accent": "Graphite",
-    "workbench.iconTheme": "material-icon-theme",
     "window.zoomLevel": 0,
     "editor.minimap.enabled": false,
-    "editor.fontFamily": "'Menlo'",
+    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontLigatures":false,
     "editor.fontSize": 12,
     "editor.lineHeight": 26,
@@ -41,7 +40,6 @@
     "explorer.confirmDragAndDrop": false,
     "python.jediEnabled": false,
     "python.envFile": "${workspaceFolder}/.env",
-
     "editor.tokenColorCustomizations": {
         "textMateRules": [
         {
@@ -134,9 +132,12 @@
         }
     ]
 },
-"editor.suggestSelection": "first",
-"vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-"terminal.integrated.fontFamily": "Menlo",
-"terminal.integrated.fontSize": 13,
-"terminal.integrated.rendererType": "dom"
+    "editor.suggestSelection": "first",
+    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.rendererType": "dom",
+    "liveServer.settings.donotVerifyTags": true,
+    "liveServer.settings.donotShowInfoMsg": true,
+    "workbench.colorTheme": "Material Theme Darker High Contrast",
+    "workbench.iconTheme": "material-icon-theme"
 }
+
