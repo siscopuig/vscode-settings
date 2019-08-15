@@ -9,8 +9,6 @@
     "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontLigatures":false,
     "editor.fontSize": 13,
-    // "editor.lineHeight": 26,
-    // "editor.letterSpacing": 0.60,
     "css.lint.duplicateProperties": "warning",
     "css.lint.argumentsInColorFunction": "warning",
     "css.lint.zeroUnits": "warning",
@@ -21,14 +19,10 @@
     "explorer.confirmDragAndDrop": false,
     "python.envFile": "${workspaceFolder}/.env",
     "editor.tokenColorCustomizations": {
-
-        // 
         "strings": "#6FBF8C",
-
         "textMateRules": [
         {
             "scope": [
-                //"source.python",
                 "variable.parameter.function-call.python",
                 "entity.name.function.decorator.python",
                 "entity.name.function.python",
@@ -93,7 +87,7 @@
         {
             "scope": [
                 "string.quoted.docstring.multi.python",
-                "comment.line.number-sign.python",
+                "comment.line.number-sign.python"
             ],
             "settings": {
                 "foreground": "#6d6d6d"
@@ -101,9 +95,7 @@
         },
         {
             "scope": [
-                // "punctuation.definition.string.begin.python",
-                // "punctuation.definition.string.end.python",
-                "constant.character.format.placeholder.other.python",
+                "constant.character.format.placeholder.other.python"
             ],
             "settings": {
                 "foreground": "#6FBF8C"
@@ -146,6 +138,5 @@
     "workbench.sideBar.location": "left",
     "debug.internalConsoleOptions": "openOnSessionStart",
     "workbench.statusBar.visible": true,
-    "terminal.integrated.shell.linux": "/bin/bash",
-
+    "terminal.integrated.shell.linux": "/bin/bash"
 }
