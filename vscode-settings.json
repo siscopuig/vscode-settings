@@ -1,25 +1,6 @@
 {
     "workbench.colorCustomizations": {
         "editor.background": "#272829",
-        "activityBarBadge.background": "#616161",
-        "list.activeSelectionForeground": "#616161",
-        "list.inactiveSelectionForeground": "#616161",
-        "list.highlightForeground": "#616161",
-        "scrollbarSlider.activeBackground": "#61616150",
-        "editorSuggestWidget.highlightForeground": "#616161",
-        "textLink.foreground": "#616161",
-        "progressBar.background": "#616161",
-        "pickerGroup.foreground": "#616161",
-        "tab.activeBorder": "#616161",
-        "notificationLink.foreground": "#616161",
-        "editorWidget.resizeBorder": "#616161",
-        "editorWidget.border": "#616161",
-        "settings.modifiedItemIndicator": "#616161",
-        "settings.headerForeground": "#616161",
-        "panelTitle.activeBorder": "#616161",
-        "breadcrumb.activeSelectionForeground": "#616161",
-        "menu.selectionForeground": "#616161",
-        "menubar.selectionForeground": "#b1afaf",
         "statusBar.background": "#292727",
         "statusBar.foreground": "#b3b0b0"
     },
@@ -27,9 +8,9 @@
     "editor.minimap.enabled": false,
     "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.fontLigatures":false,
-    "editor.fontSize": 12,
-    "editor.lineHeight": 26,
-    "editor.letterSpacing": 0.60,
+    "editor.fontSize": 13,
+    // "editor.lineHeight": 26,
+    // "editor.letterSpacing": 0.60,
     "css.lint.duplicateProperties": "warning",
     "css.lint.argumentsInColorFunction": "warning",
     "css.lint.zeroUnits": "warning",
@@ -38,19 +19,35 @@
     "git.autofetch": true,
     "window.titleBarStyle": "custom",
     "explorer.confirmDragAndDrop": false,
-    "python.jediEnabled": false,
     "python.envFile": "${workspaceFolder}/.env",
     "editor.tokenColorCustomizations": {
+
+        // 
+        "strings": "#6FBF8C",
+
         "textMateRules": [
         {
             "scope": [
-                "source.python",
+                //"source.python",
                 "variable.parameter.function-call.python",
                 "entity.name.function.decorator.python",
                 "entity.name.function.python",
                 "variable.parameter.function.language.python",
                 "support.function.magic.python",
-                "entity.other.inherited-class.python"
+                "entity.other.inherited-class.python",
+                "meta.function.decorator.python",
+                "support.type.python",
+                "keyword.operator.assignment.python",
+                "meta.item-access.python",
+                "punctuation.definition.arguments.begin.python",
+                "punctuation.definition.arguments.end.python",
+                "keyword.operator.arithmetic.python",
+                "punctuation.definition.list.begin.python",
+                "punctuation.definition.list.end.python",
+                "punctuation.separator.arguments.python",
+                "punctuation.separator.colon.python",
+                "constant.character.escape.python",
+                "punctuation.section.function.begin.python"
             ],
             "settings": {
                 "foreground": "#e9e9e9"
@@ -58,7 +55,8 @@
         },
         {
             "scope": [
-                "entity.name.type.class.python"
+                "entity.name.type.class.python",
+                "keyword.operator.comparison.python"
             ],
             "settings": {
                 "foreground": "#e9e9e9",
@@ -76,7 +74,8 @@
                 "storage.type.class.python",
                 "variable.parameter.function.language.special.self.python",
                 "variable.language.special.self.python",
-                "punctuation.separator.period.python"
+                "punctuation.separator.period.python",
+                "variable.language.special.cls.python"
             ],
             "settings": {
                 "foreground": "#FF882F",
@@ -93,17 +92,8 @@
         },
         {
             "scope": [
-                "string.quoted.single.python",
-                "constant.character.format.placeholder.other.python"
-            ],
-            "settings": {
-                "foreground": "#6FBF8C"
-            }
-        },
-        {
-            "scope": [
+                "string.quoted.docstring.multi.python",
                 "comment.line.number-sign.python",
-                "string.quoted.docstring.multi.python"
             ],
             "settings": {
                 "foreground": "#6d6d6d"
@@ -111,8 +101,19 @@
         },
         {
             "scope": [
+                // "punctuation.definition.string.begin.python",
+                // "punctuation.definition.string.end.python",
+                "constant.character.format.placeholder.other.python",
+            ],
+            "settings": {
+                "foreground": "#6FBF8C"
+            }
+        },
+        {
+            "scope": [
                 "support.variable.magic.python",
                 "support.function.builtin.python",
+                "support.type.exception.python",
                 "support.type.python"
             ],
             "settings": {
@@ -123,7 +124,6 @@
         {
             "scope": [
                 "constant.numeric.dec.python"
-                
             ],
             "settings": {
                 "foreground": "#7BAFD7",
@@ -137,7 +137,15 @@
     "terminal.integrated.rendererType": "dom",
     "liveServer.settings.donotVerifyTags": true,
     "liveServer.settings.donotShowInfoMsg": true,
-    "workbench.colorTheme": "Material Theme Darker High Contrast",
-    "workbench.iconTheme": "material-icon-theme"
-}
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "files.associations": {
+        "*.sql": "python"
+    },
+    "python.jediEnabled": false,
+    "workbench.sideBar.location": "left",
+    "debug.internalConsoleOptions": "openOnSessionStart",
+    "workbench.statusBar.visible": true,
+    "terminal.integrated.shell.linux": "/bin/bash",
 
+}
