@@ -1,142 +1,188 @@
 {
+    // Left explorer panel
     "workbench.colorCustomizations": {
-        "editor.background": "#272829",
-        "statusBar.background": "#292727",
-        "statusBar.foreground": "#b3b0b0"
+      // "editor.background": "#272829",
+      "statusBar.background": "#292727",
+      "statusBar.foreground": "#b3b0b0",
+      "gitDecoration.modifiedResourceForeground": "#5379b8",
+      "list.errorForeground": "#8f4735"
     },
     "window.zoomLevel": 0,
     "editor.minimap.enabled": false,
-    "editor.fontFamily": "'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "editor.fontLigatures":false,
-    "editor.fontSize": 13,
+    "editor.fontLigatures": false,
+    "editor.formatOnSave": true,
     "css.lint.duplicateProperties": "warning",
     "css.lint.argumentsInColorFunction": "warning",
     "css.lint.zeroUnits": "warning",
     "files.autoSave": "afterDelay",
     "explorer.confirmDelete": false,
+    "explorer.compactFolders": false,
     "git.autofetch": true,
     "window.titleBarStyle": "custom",
     "explorer.confirmDragAndDrop": false,
     "python.envFile": "${workspaceFolder}/.env",
+  
+  
     "editor.tokenColorCustomizations": {
-        "strings": "#6FBF8C",
-        "textMateRules": [
+      // "[Dark (Visual Studio Code)]": {
+      // "strings": "#6FBF8C",
+      "textMateRules": [
         {
-            "scope": [
-                "variable.parameter.function-call.python",
-                "entity.name.function.decorator.python",
-                "entity.name.function.python",
-                "variable.parameter.function.language.python",
-                "support.function.magic.python",
-                "entity.other.inherited-class.python",
-                "meta.function.decorator.python",
-                "support.type.python",
-                "keyword.operator.assignment.python",
-                "meta.item-access.python",
-                "punctuation.definition.arguments.begin.python",
-                "punctuation.definition.arguments.end.python",
-                "keyword.operator.arithmetic.python",
-                "punctuation.definition.list.begin.python",
-                "punctuation.definition.list.end.python",
-                "punctuation.separator.arguments.python",
-                "punctuation.separator.colon.python",
-                "constant.character.escape.python",
-                "punctuation.section.function.begin.python"
-            ],
-            "settings": {
-                "foreground": "#e9e9e9"
-            }
+          "name": "Opening and closing html tags",
+          "scope": [
+            "punctuation.definition.tag.begin.html",
+            "punctuation.definition.tag.end.html"
+          ],
+          "settings": {
+            "foreground": "#CFC3C0"
+          }
         },
         {
-            "scope": [
-                "entity.name.type.class.python",
-                "keyword.operator.comparison.python"
-            ],
-            "settings": {
-                "foreground": "#e9e9e9",
-                "fontStyle": "bold"
-            }
+          "name": "HTML Tag",
+          "scope": [
+            "entity.name.tag.html"
+          ],
+          "settings": {
+            "foreground": "#F07178"
+          }
         },
         {
-            "scope": [
-                "keyword.control.import.python",
-                "storage.type.function.python",
-                "keyword.control.flow.python",
-                "constant.language.python",
-                "keyword.operator.logical.python",
-                "storage.type.function.lambda.python",
-                "storage.type.class.python",
-                "variable.parameter.function.language.special.self.python",
-                "variable.language.special.self.python",
-                "punctuation.separator.period.python",
-                "variable.language.special.cls.python"
-            ],
-            "settings": {
-                "foreground": "#FF882F",
-                "fontStyle": "bold"
-            }
+          "name": "Attribute name",
+          "scope": [
+            "entity.other.attribute-name.html",
+            "meta.tag.metadata.meta.void.html"
+          ],
+          "settings": {
+            "foreground": "#FFCB6B"
+          }
         },
         {
-            "scope": [
-                "meta.function-call.generic.python"
-            ],
-            "settings": {
-                "foreground": "#FF882F"
-            }
+          "name": "Attribute value",
+          "scope": [
+            "string.quoted.double.html"
+          ],
+          "settings": {
+            "foreground": "#C3E88D"
+            // "fontStyle": "bold"
+          }
         },
         {
-            "scope": [
-                "string.quoted.docstring.multi.python",
-                "comment.line.number-sign.python"
-            ],
-            "settings": {
-                "foreground": "#6d6d6d"
-            }
+          "scope": [
+            "variable.parameter.function-call.python",
+            "entity.name.function.decorator.python",
+            "entity.name.function.python",
+            "variable.parameter.function.language.python",
+            "support.function.magic.python",
+            "entity.other.inherited-class.python",
+            "meta.function.decorator.python",
+            "support.type.python",
+            "keyword.operator.assignment.python",
+            "meta.item-access.python",
+            "punctuation.definition.arguments.begin.python",
+            "punctuation.definition.arguments.end.python",
+            "keyword.operator.arithmetic.python",
+            "punctuation.definition.list.begin.python",
+            "punctuation.definition.list.end.python",
+            "punctuation.separator.arguments.python",
+            "punctuation.separator.colon.python",
+            "constant.character.escape.python",
+            "punctuation.section.function.begin.python"
+          ],
+          "settings": {
+            "foreground": "#e9e9e9"
+          }
         },
         {
-            "scope": [
-                "constant.character.format.placeholder.other.python"
-            ],
-            "settings": {
-                "foreground": "#6FBF8C"
-            }
+          "scope": [
+            "entity.name.type.class.python",
+            "keyword.operator.comparison.python"
+          ],
+          "settings": {
+            "foreground": "#e9e9e9",
+            "fontStyle": "bold"
+          }
         },
         {
-            "scope": [
-                "support.variable.magic.python",
-                "support.function.builtin.python",
-                "support.type.exception.python",
-                "support.type.python"
-            ],
-            "settings": {
-                "foreground": "#8888C6",
-                "fontStyle": "bold"
-            }
+          "scope": [
+            "keyword.control.import.python",
+            "storage.type.function.python",
+            "keyword.control.flow.python",
+            "constant.language.python",
+            "keyword.operator.logical.python",
+            "storage.type.function.lambda.python",
+            "storage.type.class.python",
+            "variable.parameter.function.language.special.self.python",
+            "variable.language.special.self.python",
+            "punctuation.separator.period.python",
+            "variable.language.special.cls.python"
+          ],
+          "settings": {
+            "foreground": "#FF882F",
+            "fontStyle": "bold"
+          }
         },
         {
-            "scope": [
-                "constant.numeric.dec.python"
-            ],
-            "settings": {
-                "foreground": "#7BAFD7",
-                "fontStyle": "bold"
-            }
+          "scope": [
+            "meta.function-call.generic.python"
+          ],
+          "settings": {
+            "foreground": "#FF882F"
+          }
+        },
+        {
+          "scope": [
+            "string.quoted.docstring.multi.python",
+            "comment.line.number-sign.python"
+          ],
+          "settings": {
+            "foreground": "#6d6d6d"
+          }
+        },
+        {
+          "scope": [
+            "support.function.builtin.python",
+            "support.type.exception.python",
+            "support.type.python"
+          ],
+          "settings": {
+            "foreground": "#8888C6",
+            "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": [
+            "constant.numeric.dec.python"
+          ],
+          "settings": {
+            "foreground": "#4e8cad"
+            // "fontStyle": "bold"
+          }
+        },
+        {
+          "scope": [
+            "constant.character.format.placeholder.other.python"
+          ],
+          "settings": {
+            "foreground": "#a85832",
+            "fontStyle": "bold"
+          }
         }
-    ]
-},
+      ]
+      // },
+    },
     "editor.suggestSelection": "first",
-    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.fontSize": 12,
     "terminal.integrated.rendererType": "dom",
     "liveServer.settings.donotVerifyTags": true,
     "liveServer.settings.donotShowInfoMsg": true,
-    "workbench.colorTheme": "Visual Studio Dark",
-    "workbench.iconTheme": "material-icon-theme",
     "files.associations": {
-        "*.sql": "python"
+      "*.sql": "python"
     },
-    "python.jediEnabled": false,
     "workbench.sideBar.location": "left",
     "debug.internalConsoleOptions": "openOnSessionStart",
     "workbench.statusBar.visible": true,
-    "terminal.integrated.shell.linux": "/bin/bash"
-}
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "python.languageServer": "Microsoft",
+    "workbench.iconTheme": "vscode-great-icons",
+    "workbench.colorTheme": "Ayu Mirage",
+  }
