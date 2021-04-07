@@ -14,9 +14,8 @@
   // "editor.lineHeight": 20,
   // "editor.lineSpacing": 1.2,
   "editor.fontLigatures": false,
-  "window.zoomLevel": 0,
   "editor.minimap.enabled": false,
-  "editor.formatOnSave": true,
+  "editor.formatOnSave": false,
   "css.lint.duplicateProperties": "warning",
   "css.lint.argumentsInColorFunction": "warning",
   "css.lint.zeroUnits": "warning",
@@ -172,27 +171,52 @@
       {
         "scope": [
           "support.class.component.js",
-          "entity.name.tag.js",
-          "meta.tag.js",
-          "meta.jsx.children.js",
-          "meta.tag.js",
-          "meta.jsx.children.js",
-          "meta.tag.without-attributes.js",
-          "meta.block.js",
+          // "entity.name.tag.js",
+          // "meta.tag.js",
+          // "meta.jsx.children.js",
+          // "meta.tag.js",
+          // "meta.tag.without-attributes.js",
+          // "meta.block.js",
           "meta.method.declaration.js",
           "meta.class.js",
           "source.js"
         ],
         "settings": {
-          "foreground": "#ffcb45",
+          "foreground": "#FFC66D",
           // "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": [
+          "meta.tag.js",
+          "meta.tag.without-attributes.js",
+          // "entity.other.attribute-name.js",
+          // "meta.tag.attributes.js"
+        ],
+        "settings": {
+          "foreground": "#e7e7e7",
+          // "fontStyle": "bold"
+        }
+      },
+      {
+        "scope": [
+          "punctuation.definition.comment.js",
+          "comment.line.double-slash.js",
+          "comment.block.js"
+        ],
+        "settings": {
+          "foreground": "#858483",
         }
       }
     ]
   },
-  "editor.suggestSelection": "first",
+  "terminal.integrated.fontFamily": "Source Code Pro",
   "terminal.integrated.fontSize": 11,
+  "terminal.integrated.lineHeight": 1.5,
   "terminal.integrated.rendererType": "dom",
+  "terminal.integrated.shell.linux": "/bin/bash",
+  "terminal.integrated.shell.osx": "/bin/zsh",
+  "editor.suggestSelection": "first",
   "liveServer.settings.donotVerifyTags": true,
   "liveServer.settings.donotShowInfoMsg": true,
   "files.associations": {
@@ -201,11 +225,15 @@
   "workbench.sideBar.location": "left",
   "debug.internalConsoleOptions": "openOnSessionStart",
   "workbench.statusBar.visible": true,
-  "terminal.integrated.shell.linux": "/bin/bash",
   "python.languageServer": "Microsoft",
   "workbench.iconTheme": "vscode-great-icons",
   "workbench.colorTheme": "Darcula - WebStorm Edition",
   "javascript.updateImportsOnFileMove.enabled": "always",
-  "terminal.integrated.shell.osx": "/bin/zsh",
   "files.autoSave": "onFocusChange",
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
+  ],
 }
